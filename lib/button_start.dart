@@ -5,14 +5,14 @@ class ButtonStart extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return OutlinedButton(
+    return OutlinedButton.icon(
       onPressed: () {},
-      child: const Text(
+      style: OutlinedButton.styleFrom(
+        foregroundColor: Color.fromARGB(255, 237, 223, 252),
+      ),
+      icon: const Icon(Icons.play_arrow),
+      label: const Text(
         "Start Quiz",
-        style: TextStyle(
-          color: Color.fromARGB(255, 237, 223, 252),
-          fontSize: 15,
-        ),
       ),
     );
   }
