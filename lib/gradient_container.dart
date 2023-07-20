@@ -3,17 +3,16 @@ import 'package:quizz/button_start.dart';
 import 'package:quizz/text_introduction.dart';
 
 class GradientContainer extends StatelessWidget {
-  const GradientContainer({super.key});
+  const GradientContainer(this.colors, {super.key});
+
+  final List<Color> colors;
 
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [
-            Color.fromARGB(255, 76, 6, 119),
-            Color.fromARGB(255, 111, 10, 178),
-          ],
+          colors: colors,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
