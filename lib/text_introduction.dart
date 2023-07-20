@@ -9,8 +9,8 @@ class TextIntroduction extends StatelessWidget {
       "Learn Flutter the fun way!",
       style: TextStyle(
         height: 5,
-        fontSize: 20,
-        color: Colors.white,
+        fontSize: 24,
+        color: Color.fromARGB(255, 237, 223, 252),
       ),
     );
   }

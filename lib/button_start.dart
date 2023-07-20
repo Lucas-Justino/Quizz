@@ -10,8 +10,8 @@ class ButtonStart extends StatelessWidget {
       child: const Text(
         "Start Quiz",
         style: TextStyle(
-          color: Colors.white,
-          fontSize: 12,
+          color: Color.fromARGB(255, 237, 223, 252),
+          fontSize: 15,
         ),
       ),
     );
