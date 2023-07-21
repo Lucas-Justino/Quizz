@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ButtonStart extends StatelessWidget {
-  ButtonStart(this.startQuiz, {super.key});
+class StartButton extends StatelessWidget {
+  StartButton(this.startQuiz, {super.key});
 
   final void Function() startQuiz;
 

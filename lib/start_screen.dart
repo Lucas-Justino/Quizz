@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizz/button_start.dart';
+import 'package:quizz/start_button.dart';
 import 'package:quizz/text_introduction.dart';
 
 class StartScreen extends StatelessWidget {
@@ -19,7 +19,7 @@ class StartScreen extends StatelessWidget {
             color: const Color.fromARGB(150, 255, 255, 255),
           ),
           const TextIntroduction(),
-          ButtonStart(startQuiz),
+          StartButton(startQuiz),
         ],
       ),
     );
