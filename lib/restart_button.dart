@@ -1,29 +1,21 @@
 import 'package:flutter/material.dart';
 
-class AnswerButton extends StatelessWidget {
-  const AnswerButton(this.answerText, this.onTap, {super.key});
-
-  final String answerText;
-  final void Function() onTap;
-
+class RestartButton extends StatelessWidget {
   @override
   Widget build(context) {
-    return ElevatedButton(
-      onPressed: onTap,
+    return ElevatedButton.icon(
+      onPressed: () {},
+      icon: Icon(Icons.restart_alt),
+      label: Text('Restart Quiz'),
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color.fromARGB(255, 33, 1, 95),
-        foregroundColor: Colors.white,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(40),
         ),
         padding: const EdgeInsets.symmetric(
           vertical: 10,
-          horizontal: 40,
+          horizontal: 15,
         ),
-      ),
-      child: Text(
-        answerText,
-        textAlign: TextAlign.center,
       ),
     );
   }
