@@ -3,7 +3,7 @@ import 'package:quizz/start_button.dart';
 import 'package:quizz/text_introduction.dart';
 
 class StartScreen extends StatelessWidget {
-  StartScreen(this.startQuiz, {super.key});
+  const StartScreen(this.startQuiz, {super.key});
 
   final void Function() startQuiz;
 
