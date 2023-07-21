@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ButtonStart extends StatelessWidget {
-  const ButtonStart({super.key});
+  ButtonStart(this.startQuiz, {super.key});
+
+  final void Function() startQuiz;
 
   @override
   Widget build(context) {
     return OutlinedButton.icon(
-      onPressed: () {},
+      onPressed: startQuiz,
       style: OutlinedButton.styleFrom(
         foregroundColor: Color.fromARGB(255, 237, 223, 252),
       ),

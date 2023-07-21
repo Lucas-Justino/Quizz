@@ -3,7 +3,9 @@ import 'package:quizz/button_start.dart';
 import 'package:quizz/text_introduction.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen({super.key});
+  StartScreen(this.startQuiz, {super.key});
+
+  final void Function() startQuiz;
 
   @override
   Widget build(context) {
@@ -17,7 +19,7 @@ class StartScreen extends StatelessWidget {
             color: const Color.fromARGB(150, 255, 255, 255),
           ),
           const TextIntroduction(),
-          const ButtonStart(),
+          ButtonStart(startQuiz),
         ],
       ),
     );
